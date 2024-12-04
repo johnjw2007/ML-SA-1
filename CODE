@@ -1,0 +1,32 @@
+Introduction to Machine Learning - SA 1 - JAN 2024
+
+Q1. Create a scatter plot between cylinder vs Co2Emission (green color)
+
+Code:
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+file_path = 'FuelConsumption (1).csv'  # Ensure the file is in the same directory or provide the full path
+data = pd.read_csv(file_path)
+plt.scatter(data['CYLINDERS'], data['CO2EMISSIONS'], color='green')
+plt.title('Cylinder vs CO2Emission')
+plt.xlabel('Cylinder')
+plt.ylabel('CO2 Emissions (g/km)')
+plt.show()
+
+Output:
+
+
+Q2. Using scatter plot compare data   cylinder vs Co2Emission and Enginesize Vs Co2Emission using different colors
+
+Q3. Using scatter plot compare data   cylinder vs Co2Emission and Enginesize Vs Co2Emission and FuelConsumption_comb Co2Emission using different colors
+
+Q4. Train your model with independent variable as cylinder and dependent variable as Co2Emission
+
+Q5. Train another model with independent variable as FuelConsumption_comb and dependent variable as Co2Emission
+
+Q6. Train your model on different train test ratio and train the models and note down their accuracies
+
+ 
